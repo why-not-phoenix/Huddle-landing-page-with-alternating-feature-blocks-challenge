@@ -1,0 +1,490 @@
+/* __________CONTENT__________
+
+  # MOBILE FIRST STYLING (max-width:900px) [line 50]
+    ## BASE STYLES [line 52]
+      ### Base Element Selectors [line 54]
+      ### Headings [line 95]
+      ### Containers [line 106]
+      ### Buttons [line 111]
+    ## INTRODUCTORY SECTION [line 147]
+      ### Introduction Box [line 149]
+      ### Navigation Menu [line 158]
+      ### Title [line 169]
+    ## FEATURES SECTION [line 182]
+    ## CALL TO ACTION [line 200]
+    ## FOOTER [line 211]
+      ### Footer Style [line 213]
+      ### Company Information [line 221]
+      ### Copyright [line 277]
+      ### Attribution [line 283]
+
+  # LARGE SCREEN STYLING (min-width: 900px) [line 294]
+    ## BASE STYLES 900px+ [line 298]
+      ### Base Element Selectors 900px+ [line 300]
+      ### Headings 900px+ [line 305]
+      ### Buttons 900px+ [line 316]
+    ## INTRODUCTORY SECTION 900px+ [line 326]
+      ### Introduction Box 900px+ [line 328]
+      ### Title 900px+ [line 334]
+    ## FEATURES SECTION 900px+ [line 352]
+    ## CALL TO ACTION 900px+ [line 373]
+    ## FOOTER 900px+ [line 380]
+      ### Footer Style 900px+ [line 382]
+      ### Company Information 900px+ [line 391]
+      ### Copyright 900px+ [line 456]
+      ### Attribution 900px+ [line 462]
+
+  # lARGER SCREEN STYLING {min-width: 1201px} [line 468]
+    ## BASE STYLES 1201px+ [line 471]
+      ### Base Element Selectors 1201px+ [line 473]
+      ### Headings 1201px+ [line 478]
+      ### Buttons 1201px+ [line 484]
+
+  # END [line 490]
+ */
+
+
+
+
+
+/* MOBILE FIRST STYLING (max-width:900px) */
+
+/* BASE STYLES */
+
+/* Base Element Selectors */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+  --fa-border-radius: 100%;
+  --fa-border-padding: 1.5rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--very-dark-cyan, #00242d);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 13rem;
+}
+
+/* Headings */
+.intro-heading {
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+.cta-heading {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+/* Containers */
+.outlined-box {
+  box-shadow: 0 0 2rem hsl(192, 100%, 9%, 0.1);
+}
+
+/* Buttons */
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--very-dark-cyan, #00242d);
+  background-color: #fff;
+  border: none;
+  border-radius: 3.5rem;
+  box-shadow: 0 0 2rem hsla(192, 100%, 9%, 0.2);
+  padding: 1.2rem 4.5rem;
+}
+
+.nav-btn:hover {
+  color: var(--grayish-blue, #7f8d98);
+  cursor: pointer;
+}
+
+.pink-button.sm {
+  background-color: var(--pink, #ff51bf);
+  color: var(--very-pale-cyan, #eafaff);
+  padding: 2.5rem 12rem;
+}
+
+.pink-button.lg {
+  background-color: var(--pink, #ff51bf);
+  color: var(--very-pale-cyan, #eafaff);
+  padding: 2.5rem 9.5rem;
+  margin-top: 3.5rem;
+}
+
+.pink-button:hover {
+  background-color: hsla(322, 100%, 66%, 0.7);
+  cursor: pointer;
+}
+
+/* INTRODUCTORY SECTION */
+
+/* Introduction Box */
+.intro-box {
+  background-color: var(--very-pale-cyan, #eafaff);
+  background-image: url(../images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4.8rem 4%;
+}
+
+/* Navigation Menu */
+.intro-box nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 21rem;
+}
+
+/* Title */
+.title {
+  margin: 17rem 6.5% 0;
+}
+
+.title-text p {
+  margin: 4rem 0;
+}
+
+.title-image {
+  margin-top: 11rem;
+}
+
+/* FEATURES SECTION */
+
+.features {
+  margin: 16rem 4%;
+  display: grid;
+  gap: 8rem;
+}
+
+.feature-box {
+  gap: 25rem;
+  border-radius: 2rem;
+  padding: 11rem 10.5%;
+}
+
+.feature-box p {
+  color: var(--grayish-blue, #7f8d98);
+}
+
+/* CALL TO ACTION */
+
+.cta {
+  margin: 0 2.5%;
+  margin-bottom: -9rem;
+  padding: 7.5rem 7%;
+  position: relative;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+/* FOOTER */
+
+/* Footer Style */
+footer {
+  background-color: var(--very-dark-cyan, #00242d);
+  color: #fff;
+  text-align: left;
+  padding: 18rem 4% 6.5rem;
+}
+
+/* Company Information */
+.company-contact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.company-contact-box li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.location-icon {
+  margin-bottom: 8rem;
+}
+
+.email-icon {
+  margin-top: 0.8rem;
+}
+
+.links ul {
+  display: grid;
+  gap: 5.5rem;
+}
+
+.links li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.company-social ul {
+  text-align: center;
+}
+
+.company-social li {
+  display: inline;
+  margin-right: 2.5rem;
+}
+
+.social-media .fa-facebook-f {
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+}
+
+.social-media .fa-twitter, .social-media .fa-instagram {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.social-media i:hover {
+  color: var(--pink, #ff51bf);
+  border: 1px solid var(--pink, #ff51bf);
+  cursor: pointer;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* LARGE SCREEN STYLING (min-width: 900px) */
+
+@media (min-width: 900px) {
+
+  /* ## BASE STYLES 900px+ */
+
+  /* Base Element Selectors 900px+ */
+  body {
+    font-size: 1.4rem;
+  }
+
+  /* Headings 900px+ */
+  .intro-heading {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .cta-heading {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  /* Buttons 900px+ */
+  button {
+    font-size: 1.2rem;
+    padding: 1.7rem 6.7rem;
+  }
+
+  .pink-button.sm {
+    padding: 2rem 6.8rem;
+  }
+
+  /* ## INTRODUCTORY SECTION 900px+ */
+
+  /* ### Introduction Box 900px+ */
+  .intro-box {
+    background-image: url(../images/bg-hero-desktop.svg);
+    padding: 5rem 5.5%;
+  }
+
+  /* Title 900px+ */
+  .title {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 6.4rem 0 3.5rem;
+  }
+
+  .title-text {
+    width: 45%;
+    padding-right: 8.5rem;
+  }
+
+  .title-image {
+    width: 55%;
+    margin: 0;
+  }
+
+  /* FEATURES SECTION 900px+ */
+
+  .features {
+    margin: 16rem 6.6%;
+    gap: 4.5rem;
+  }
+
+  .feature-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-align: left;
+    padding: 5.5rem 4rem 5.5rem 12rem;
+    height: 44.5rem;
+  }
+
+  .feature-box-reverse {
+    flex-direction: row;
+  }
+
+  /* CALL TO ACTION 900px+ */
+
+  .cta {
+    margin: 0 21.8% -9rem;
+    padding: 7.5rem;
+  }
+
+  /* FOOTER 900px+ */
+
+  /* Footer Style 900px+ */
+  footer {
+    background-color: var(--very-dark-cyan, #00242d);
+    color: #fff;
+    text-align: left;
+    padding-left: 7.6%;
+    padding-right: 7.6%;
+  }
+
+  /* Company Information 900px+ */
+  .company-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 14rem;
+  }
+
+  .company-info div {
+    flex: 1;
+  }
+
+  .company-info div:nth-of-type(1) {
+    flex: 2;
+  }
+
+  .company-info div:nth-of-type(2) {
+    flex: 2;
+  }
+
+  .location-icon {
+    margin-bottom: 4rem;
+  }
+
+  .email-icon {
+    margin-top: 0.3rem;
+  }
+
+  .links ul {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'one four'
+      'two five'
+      'three six';
+    grid-column-gap: 10rem;
+    grid-row-gap: 1.5rem;
+  }
+
+  .one {
+    grid-area: one;
+  }
+
+  .two {
+    grid-area: two;
+  }
+
+  .three {
+    grid-area: three;
+  }
+
+  .four {
+    grid-area: four;
+  }
+
+  .five {
+    grid-area: five;
+  }
+
+  .six {
+    grid-area: six;
+  }
+
+  .company-social ul {
+    text-align: left;
+  }
+
+  /* Copyright 900px+ */
+  .copyright {
+    text-align: right;
+    font-size: 1.2rem;
+  }
+
+  /* Attribution 900px+ */
+  .attribution {
+    font-size: 11px;
+  }
+}
+
+/* lARGER SCREEN STYLING {min-width: 1201px} */
+
+@media (min-width: 1201px) {
+  /* BASE STYLES 1201px+ */
+
+  /* Base Element Selectors 1201px+ */
+  body {
+    font-size: 1.8rem;
+  }
+
+  /* Headings 1201px+ */
+  .intro-heading {
+    font-size: 4rem;
+  }
+
+
+  /* Buttons 1201px+ */
+  button {
+    font-size: 1.6rem;
+  }
+}
+
+/* END */
